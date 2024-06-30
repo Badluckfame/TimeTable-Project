@@ -80,24 +80,26 @@ function displayTimetable(timetableData, sectionId) {
 function getStudentTimetableData(section) {
     if (section === 'Section A') {
         return [
-            { time: '08:00 - 09:00', classes: ['Theory', 'Theory', 'Theory', 'Theory', 'Theory'] },
-            { time: '09:00 - 10:00', classes: ['Data structures', 'Introductory Algebra', 'Financial management', 'Computer networks', 'Theory'] },
-            { time: '10:00 - 10:30', classes: ['Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break'] },
+            { time: '08:00 - 09:00', classes: ['Microprocessors', 'Operation Research', 'Introductory Algebra', 'Mathematics- I', 'Cloud computing'] },
+            { time: '09:00 - 10:00', classes: ['Data structures', 'Introductory Algebra', 'Financial management', 'Computer networks', 'GUI Programming'] },
+            { time: '10:00 - 10:30', classes: ['Break', 'Break', 'Break', 'Break', 'Break'] },
             { time: '10.30 - 11:30', classes: ['Operating systems', 'Foundational maths', 'Creative English', 'Statistics', 'Computer fundamentals'] },
-            { time: '11:30 - 12:30', classes: ['Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break'] },
-            { time: '12.30 - 13:30', classes: ['Operating systems', 'Foundational maths', 'Creative English', 'Statistics', 'Computer fundamentals'] },
+            { time: '11:30 - 12:30', classes: ['Network Security', 'Theory of Computing', 'Fundamentals of TCP/IP', '	Simulation and Modeling', 'Artificial Intelligence'] },
+            { time: '12.30 - 13:30', classes: ['Operating systems', 'Foundational maths','Statistics', 'Creative English' , 'Computer fundamentals'] },
             { time: '13:30 - 14:30', classes: ['Lab', 'Lab', 'Lab', 'Lab', 'Lab'] }
         ];
+
     } else if (section === 'Section B') {
         return [
             { time: '08:00 - 09:00', classes: ['Foundational maths', 'computer fundamentals', 'Creative English', 'Statistics', 'Operating systems'] },
-            { time: '09:00 - 10:00', classes: ['Theory', 'Theory', 'Theory', 'Theory', 'Theory'] },
-            { time: '10:00 - 10:30', classes: ['Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break'] },
-            { time: '10:30 - 11:30', classes: ['Theory', 'Theory', 'Theory', 'Theory', 'Theory'] },
-            { time: '11:30 - 12:30', classes: ['Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break', 'Lunch Break'] },
+            { time: '09:00 - 10:00', classes: ['Fundamentals of TCP/IP', '	Simulation and Modeling', 'Artificial Intelligence', 'Network Security', 'Theory of Computing'] },
+            { time: '10:00 - 10:30', classes: ['Break', 'Break', 'Break', 'Break', 'Break'] },
+            { time: '10:30 - 11:30', classes: ['Microprocessors', 'Operation Research', 'Introductory Algebra', 'Mathematics- I', 'Cloud computing'] },
+            { time: '11:30 - 12:30', classes: ['Fundamentals of TCP/IP', '	Simulation and Modeling', 'Artificial Intelligence', 'Network Security', 'Theory of Computing'] },
             { time: '12:30 - 13:30', classes: ['Foundational maths', 'computer fundamentals', 'Creative English', 'Statistics', 'Operating systems'] },
             { time: '13:30 - 14:30', classes: ['Lab', 'Lab', 'Lab', 'Lab', 'Lab'] }
         ];
+
     }
 }
 
@@ -124,11 +126,11 @@ function getTeacherTimetableData() {
     return [
         { time: '08:00 - 09:00', classes: ['BCA-A', 'BCA-B','BCA-B' , 'BCA-A', 'BCA-A'] },
         { time: '09:00 - 10:00', classes: ['BCA-B',  'Free', 'BCA-A', 'Free', 'BCA-B'] },
-        { time: '10:30 - 11:30', classes: ['Break','Break','Break','Break','Break'] },
+        { time: '10:00 - 10:30', classes: ['Break','Break','Break','Break','Break'] },
         { time: '10:30 - 11:30', classes: ['Free','BCA-A', 'BCA-A', 'BCA-B', 'BCA-B'] },
-        { time: '12:30 - 13:30', classes: ['BCA-A', 'BCA-B', 'BCA-B', 'BCA-A', 'Free'] },
+        { time: '11:30 - 12:30', classes: ['BCA-A', 'BCA-B', 'BCA-B', 'BCA-A', 'Free'] },
         { time: '12:30 - 13:30', classes: ['BCA-B', 'BCA-A', 'Free', 'BCA-B', 'BCA-A'] },
-        { time: '11:30 - 12:30', classes: ['Lab','Lab','Lab','Lab','Lab'] }
+        { time: '13:30 - 14:30', classes: ['Lab','Lab','Lab','Lab','Lab'] }
      
     ];
 }
